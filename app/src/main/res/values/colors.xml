@@ -1,0 +1,28 @@
+<resources>
+    <!-- Teal Color Palette -->
+    <color name="teal_200">#80DEEA</color>
+    <color name="teal_300">#4DB6AC</color>
+    <color name="teal_700">#018786</color>
+    <color name="teal_900">#004D40</color>
+
+    <!-- Gray Scale -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_600">#757575</color>
+
+    <!-- State Colors -->
+    <color name="error_red">#B00020</color>
+
+    <!-- Text Input Color States -->
+    <color name="text_input_stroke_color">#757575</color>
+    <color name="text_input_hint_color">#757575</color>
+
+    <!-- State Lists -->
+    <color name="text_input_stroke_color_state">
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:color="@color/teal_700" android:state_focused="true"/>
+            <item android:color="@color/gray_600"/>
+        </selector>
+    </color>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeFormActivity">
+
+    <!-- Employee Photo -->
+    <ImageView
+        android:id="@+id/imgEmployeePhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_person_placeholder"
+        android:contentDescription="Employee Photo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:scaleType="centerCrop" />
+
+    <!-- First Name -->
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        app:layout_constraintTop_toBottomOf="@id/imgEmployeePhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"/>
+
+    <!-- Last Name -->
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        app:layout_constraintTop_toBottomOf="@id/etFirstName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"/>
+
+    <!-- Date of Birth -->
+    <EditText
+        android:id="@+id/etDateOfBirth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Date of Birth"
+        android:clickable="true"
+        android:focusable="false"
+        app:layout_constraintTop_toBottomOf="@id/etLastName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"/>
+
+    <!-- Gender Spinner -->
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etDateOfBirth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Date Hired -->
+    <EditText
+        android:id="@+id/etDateHired"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Date Hired"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@id/spinnerGender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"/>
+
+    <!-- Contract Expiration Date -->
+    <EditText
+        android:id="@+id/etContractExpiration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Contract Expiration Date (if applicable)"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@id/etDateHired"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"/>
+
+    <!-- Position in the Company -->
+    <EditText
+        android:id="@+id/etPosition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Position in the Company"
+        app:layout_constraintTop_toBottomOf="@id/etContractExpiration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"/>
+
+    <!-- Position Start Date -->
+    <EditText
+        android:id="@+id/etPositionStartDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Position Start Date"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@id/etPosition"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"/>
+
+    <!-- Manager's Name -->
+    <EditText
+        android:id="@+id/etManagerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Manager's Name"
+        app:layout_constraintTop_toBottomOf="@id/etPositionStartDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"/>
+
+    <!-- Emergency Contact -->
+    <EditText
+        android:id="@+id/etEmergencyContact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Emergency Contact"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/etManagerName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="40dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etEmergencyContact" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
