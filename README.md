@@ -132,4 +132,4 @@ MIT License - See [LICENSE](LICENSE) for details
 - Android Developer Documentation
 - Glide Image Loading Library
 - Material Design Components
-```
+
